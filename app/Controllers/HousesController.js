@@ -1,4 +1,4 @@
-import { ProxyState } from "../AppState"
+import { ProxyState } from "../AppState.js"
 import { getHouseFormTemplate  } from "../forms/houseform.js"
 import { houseService } from "../Services/HouseService.js"
 function _drawHouses() {
@@ -17,6 +17,7 @@ export class HousesController {
   /**
      * @type {HTMLFormElement}
      */
+    // @ts-ignore
     const form = event.target
     
     const houseData = {

@@ -1,26 +1,29 @@
 export function getHouseFormTemplate() {
   return /*html*/`
-  <form class="bg-white rounded p-3 shadow visually-hidden" onsubmit="app.carsController.addHouse()"
+  <form class="bg-white rounded p-3 shadow visually-hidden" onsubmit="app.houseController.addHouse()"
   id="house-form">
   <div class="form-group">
     <label for="price" class="">Price:</label>
-    <select name="price" id="price" required class="form-control">
+    <input name="price" id="price" required class="form-control">
   </div>
+
   <div class="form-group">
     <label for="address" class="">address:</label>
     <input type="text" class="form-control" name="address" id="address" required>
   </div>
+
   <div class="form-group">
     <label for="sqft" class="">sqft:</label>
-    <input type="number" class="form-control" name="sqft" id="sqft">
+    <input type="text" class="form-control" name="sqft" id="sqft">
   </div>
+
   <div class="form-group">
     <label for="rooms" class="">Rooms:</label>
-    <input type="rooms" class="form-control" name="rooms" id="rooms">
+    <input type="number" class="form-control" name="rooms" id="rooms">
   </div>
   <div class="form-group">
     <label for="bathrooms" class="">Bathrooms:</label>
-    <input type="bathrooms" class="form-control" name="bathrooms" id="bathrooms">
+    <input type="number" class="form-control" name="bathrooms" id="bathrooms">
   </div>
   <div class="form-group">
     <label for="details" class="">Details:</label>
