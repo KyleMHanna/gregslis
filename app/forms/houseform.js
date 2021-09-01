@@ -1,15 +1,15 @@
 export function getHouseFormTemplate() {
   return /*html*/`
-  <form class="bg-white rounded p-3 shadow visually-hidden" onsubmit="app.houseController.addHouse()"
+  <form class="bg-white rounded p-3 shadow visually-hidden" onsubmit="app.housesController.addHouse()"
   id="house-form">
   <div class="form-group">
     <label for="price" class="">Price:</label>
-    <input name="price" id="price" required class="form-control">
+    <input name="price" id="price"  class="form-control">
   </div>
 
   <div class="form-group">
     <label for="address" class="">address:</label>
-    <input type="text" class="form-control" name="address" id="address" required>
+    <input type="text" class="form-control" name="address" id="address" >
   </div>
 
   <div class="form-group">
@@ -31,7 +31,7 @@ export function getHouseFormTemplate() {
   </div>
   <div class="form-group">
     <label for="img" class="">img:</label>
-    <input type="url" class="form-control" name="img" id="img" required>
+    <input type="url" class="form-control" name="img" id="img" >
   </div>
   <div class="button-group my-3">
     <button type="reset" class="btn btn-secondary">clear</button>

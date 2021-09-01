@@ -4,9 +4,9 @@ import { House } from "../Models/House.js";
 class HouseService {
 
   addHouse(houseData) {
-    console.log('add house in house service')
     var testHouse = new House(houseData)
     ProxyState.houses = [...ProxyState.houses, testHouse]
+    console.log('add house in house service')
   }
 }
 

@@ -17,11 +17,14 @@ get HouseTemplate(){
       <div class="card">
         <img src="${this.img}" alt="listing image" class="rounded">
         <div class="card-body">
-          <h5 class="d-flex justify-content-between">
-            <span  ${this.rooms}>${this.sqft} - ${this.address}</span>
-            <span>$ ${this.price}</span>
-          </h5>
-          <p>${this.details}</p>
+        <h3>  <span> ${this.address} </span></h3>
+          <h4 class=" justify-content-between">
+            <p><span>  ${this.rooms} Rooms</span></p>
+            <p><span> ${this.bathrooms} Bathrooms</span></p>
+            <p><span> ${this.sqft} Sqft </span></p>
+            <p><span> Asking price $ ${this.price}</span></p>
+            </h4>
+            <h5>Description: ${this.details}</h5>
         </div>
       </div>
     </div>
