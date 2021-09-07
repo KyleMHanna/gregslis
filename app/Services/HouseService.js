@@ -1,6 +1,13 @@
 import { ProxyState } from "../AppState.js";
 import { House } from "../Models/House.js";
 
+
+
+
+const api = axios.create({
+  baseURL: "https://bcw-sandbox.herokuapp.com/api/houses"
+}) 
+
 class HouseService {
 
   addHouse(houseData) {

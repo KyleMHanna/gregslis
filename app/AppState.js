@@ -4,7 +4,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
   /** @type {import('./Models/Car').Car[]} */
   cars = []
-
+  /** @type {import('./Models/House').House[]} */
   houses = []
   
 }

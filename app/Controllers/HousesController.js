@@ -13,7 +13,7 @@ export class HousesController {
     ProxyState.on('houses', _drawHouses)
   }
 
-  addHouse() {
+ async addHouse() {
     event.preventDefault()
   /**
      * @type {HTMLFormElement}
@@ -32,7 +32,7 @@ export class HousesController {
     }
 
     try {
-      houseService.addHouse(houseData)
+     await houseService.addHouse(houseData)
     } catch (e) {
       form.make.classList.add('border-danger')
       console.error('[TODO] you were supposed to do this', e)
